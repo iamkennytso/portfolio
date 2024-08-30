@@ -1,0 +1,3 @@
+export const paresumeUrl: string = 'https://firebasestorage.googleapis.com/v0/b/kentsoportfolio.appspot.com/o/resumeParse.pdf?alt=media&token=90acd583-5a9b-45fe-97d4-b26f9a23211a'
+export const huresumeUrl: string = 'https://firebasestorage.googleapis.com/v0/b/kentsoportfolio.appspot.com/o/resume.pdf?alt=media&token=60db5f42-579f-4b1e-92d9-f7dd1779b7a5'
+export const coverLetterUrl: string = 'https://firebasestorage.googleapis.com/v0/b/kentsoportfolio.appspot.com/o/coverLetter.pdf?alt=media&token=0bb1afba-1f37-494a-87f7-7cab24b3eae7';

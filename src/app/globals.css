@@ -2,28 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background: black;
+}
+
+h1 {
+  font-size: 8em;
+  color: darkblue;
+}
+h2 {
+  font-size: 2em;
+  color: blue;
+}
+
+mark {
+  color: blue;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+#who {
+  --s: 300px;
+  --c1: #000000;
+  --c2: #0f0f0f;
+  --c3: #1e1e1e;
+
+  background:
+    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+      calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+  background-size: var(--s) calc(var(--s)*0.577);
+}
+
+#what {
+  --s: 100px;
+  --c1: #000000;
+  --c2: #1e1e1e;
+  
+  --_g: 
+      var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+      var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
+  background:
+    radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
+    radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
+    var(--c1);
+  background-size: var(--s) var(--s);
+}
+
+#where {
+    --s: 120px;
+    --c1: #0f0f0f;
+    --c2: #000000;
+    
+    --_g:var(--c1) 15%,var(--c2) 0 28%,#0000 0 72%,var(--c2) 0 85%,var(--c1) 0;
+    background:
+      conic-gradient(from 90deg at 2px 2px,#0000 25%,var(--c1) 0) -1px -1px,
+      linear-gradient(-45deg,var(--_g)),linear-gradient(45deg,var(--_g)),
+      conic-gradient(from 90deg at 40% 40%,var(--c1) 25%,var(--c2) 0) 
+      calc(var(--s)/-5) calc(var(--s)/-5);
+    background-size: var(--s) var(--s);
+}
+
+#when {
+  --s: 48px;
+  --c1: #000000;
+  --c2: #0f0f0f;
+  --c3: #1e1e1e;
+  
+  --b: calc(var(--s)/2.67); /* control the thickness of the wavy line */
+  
+  --_r: calc(1.28*var(--s) + var(--b)/2) at left 50%;
+  --_f: calc(100% - var(--b)),var(--c1) calc(101% - var(--b)) 100%,#0000 101%;
+  --g0: calc(-.8*var(--s)),var(--c2) var(--_f);
+  --g1: calc(-.8*var(--s)),var(--c3) var(--_f);
+  --_s: calc(1.5*var(--s) + var(--b));
+  background: 
+    radial-gradient(var(--_r) bottom var(--g0)) calc(2*var(--s)) calc(-1*var(--_s)),
+    radial-gradient(var(--_r) bottom var(--g1)) calc(-1*var(--s)) calc(var(--_s)/-2),
+    radial-gradient(var(--_r) top    var(--g1)) 0 var(--_s),
+    radial-gradient(var(--_r) top    var(--g0)) var(--s) calc(var(--_s)/ 2),
+    linear-gradient(var(--c2) 50%,var(--c3) 0);
+  background-size: calc(4*var(--s)) var(--_s);
+}
+
+#why {
+  --s: 220px; /* control the size*/
+  --c1: #000000;
+  --c2: #0f0f0f;
+  
+  --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
+  --_c:,#0000 75%,var(--c2) 0;
+  background:
+    conic-gradient(at 12% 20% var(--_c)) calc(var(--s)* .44) calc(.9*var(--s)),
+    conic-gradient(at 12% 20% var(--_c)) calc(var(--s)*-.06) calc(.4*var(--s)),
+    conic-gradient(at 20% 12% var(--_c)) calc(.9*var(--s)) calc(var(--s)* .44),
+    conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
+    var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
+  background-size: var(--s) var(--s);
 }
 
 @layer utilities {

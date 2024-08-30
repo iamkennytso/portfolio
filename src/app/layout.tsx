@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Sono } from "next/font/google";
 import "./globals.css";
 import Nav from "./ui/nav";
 
-const defaultFont = Inter({ subsets: ["latin"] });
+const defaultFont = Sono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Kenneth Tso Portfolio Site",
