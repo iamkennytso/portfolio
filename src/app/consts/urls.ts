@@ -1,3 +1,3 @@
-export const paresumeUrl: string = 'https://firebasestorage.googleapis.com/v0/b/kentsoportfolio.appspot.com/o/resumeParse.pdf?alt=media&token=90acd583-5a9b-45fe-97d4-b26f9a23211a'
-export const huresumeUrl: string = 'https://firebasestorage.googleapis.com/v0/b/kentsoportfolio.appspot.com/o/resume.pdf?alt=media&token=60db5f42-579f-4b1e-92d9-f7dd1779b7a5'
-export const coverLetterUrl: string = 'https://firebasestorage.googleapis.com/v0/b/kentsoportfolio.appspot.com/o/coverLetter.pdf?alt=media&token=0bb1afba-1f37-494a-87f7-7cab24b3eae7';
+export const paresumeUrl: string = 'https://firebasestorage.googleapis.com/v0/b/kentsoportfolio.appspot.com/o/Kenneth_Tso_Software_Engineer_Parse.pdf?alt=media&token=1695da61-36e3-41a8-a2ca-68dbc8193eeb'
+export const huresumeUrl: string = 'https://firebasestorage.googleapis.com/v0/b/kentsoportfolio.appspot.com/o/Kenneth_Tso_Software_Engineer.pdf?alt=media&token=80711c59-924b-47cb-b110-632a6b5a531a'
+export const coverLetterUrl: string = 'https://firebasestorage.googleapis.com/v0/b/kentsoportfolio.appspot.com/o/Kenneth_Tso_Cover_Letter.pdf?alt=media&token=adf9b261-6399-4f86-9e63-b09eebef2317';
