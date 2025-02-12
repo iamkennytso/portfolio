@@ -1,4 +1,4 @@
-import { huresumeUrl } from "../consts/urls";
+import { huresumeUrl } from "../../consts/urls";
 import PdfContainer from "../ui/pdfContainer"
 
 export default function Huresume() {

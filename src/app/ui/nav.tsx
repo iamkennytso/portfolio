@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import path from 'path';
 
 const NAV_LINKS = [
   {
@@ -20,6 +19,10 @@ const NAV_LINKS = [
   {
     name: 'Cover Letter',
     href: '/coverLetter'
+  },
+  {
+    name: 'Wonderlic',
+    href: '/wonderlic'
   },
   {
     name: 'Contact',
