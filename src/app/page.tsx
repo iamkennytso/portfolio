@@ -1,3 +1,4 @@
+const CONTAINER_CLASSES = "md:flex md:flex-row justify-around w-full p-2 md:p-8"
 export default function Home() {
   const gradDate = new Date(2017, 10, 10)
   const curDate = new Date()
@@ -9,14 +10,13 @@ export default function Home() {
   const days = Math.floor(expDays)
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between mt-8">
-
-      <div id='who' className="flex flex-row justify-around w-full p-8">
-        <div className="w-1/2 text-center">
-          <h1>Who</h1><br/>
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <div id='who' className={CONTAINER_CLASSES}>
+        <div className="md:w-1/2 text-center">
+          <h1>Who</h1>
           <h2>is Ken?</h2>
         </div>
-        <div className="w-1/2 flex items-center">
+        <div className="md:w-1/2 flex items-center">
           <p>
             Ken&apos;s a software engineer with 6+ years of experience. He has experience working with both small startups and large corporations. He has thrived as a solo full-stack engineer and has also successfully led teams of engineers. <br/><br/>
             Ken places a high value on <mark>company culture</mark>, particularly among individuals who are open to giving and receiving constructive criticism and who are dedicated to honing their craft. He prioritizes opportunities for learning and values thorough code reviews. On a company level, Ken seeks to be part of a mission-driven organization that fosters collaboration and motivates its team members.
@@ -24,12 +24,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='what' className="flex flex-row justify-around w-full p-8">
-        <div className="w-1/2 text-center">
-          <h1>What</h1><br/>
+      <div id='what' className={CONTAINER_CLASSES}>
+        <div className="md:w-1/2 text-center">
+          <h1>What</h1>
           <h2>technologies does Ken use?</h2>
         </div>
-        <div className="w-1/2 items-center">
+        <div className="md:w-1/2 items-center">
           <p>
             Ken has built his entire career around <mark>JavaScript</mark>, TypeScript, and Node, with a strong focus on <mark>React and React Native</mark>. He&apos;s used NextJS, including this website, which can be found{' '}
             <a href='https://github.com/iamkennytso/portfolio' target='_blank' className="underline text-blue-400">here!</a><br/>
@@ -41,9 +41,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='where' className="flex flex-row justify-around w-full p-8">
+      <div id='where' className={CONTAINER_CLASSES}>
         <div className="w-1/2 text-center">
-          <h1>Where</h1><br/>
+          <h1>Where</h1>
           <h2>is Ken, where has he worked?</h2>
         </div>
         <div className="w-1/2 flex items-center">
@@ -54,9 +54,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='when' className="flex flex-row justify-around w-full p-8">
+      <div id='when' className={CONTAINER_CLASSES}>
         <div className="w-1/2 text-center">
-          <h1>When</h1><br/>
+          <h1>When</h1>
           <h2>did Ken start coding?</h2>
         </div>
         <div className="w-1/2 flex items-center">
@@ -67,9 +67,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='why' className="flex flex-row justify-around w-full p-8">
+      <div id='why' className={CONTAINER_CLASSES}>
         <div className="w-1/2 text-center">
-          <h1>Why</h1><br/>
+          <h1>Why</h1>
           <h2>is Ken a software engineer?</h2>
         </div>
         <div className="w-1/2 flex items-center">
