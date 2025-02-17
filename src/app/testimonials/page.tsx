@@ -1,5 +1,5 @@
 export default function Testimonials() {
-  return <div className="flex flex-col m-16 justify-center items-center">
+  return <div className="flex flex-col m-4 md:m-16 justify-center items-center">
     <code>“Ken is very enthusiastic about being good at what he does and is by far the most dedicated of anyone I know to improving his skills. He spends a lot of his free time writing code for personal projects, he has done freelance work, and he practices algorithms like a madman. He&apos;s also just a stand-up guy and pleasant to work with. He knows when to switch into serious-business-professional mode and when to be chill. He has a good sense of humor and is extremely goal-oriented. I haven&apos;t interacted with his code much because we weren&apos;t on the same project when we worked together, but he was always helping and teaching our other friend/coworker when she got caught up in the technicalities of archaic systems that she had to work with at our old workplace. He&apos;d be a strong contributor on any team and we&apos;d be lucky to have him.”</code>
   </div>
 }
