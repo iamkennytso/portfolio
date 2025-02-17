@@ -9,18 +9,22 @@ body {
 
 h1 {
   font-size: 8em;
-  color: darkblue;
+  color: #46BDDF;
   filter: drop-shadow(0 20px 16px rgba(255, 255, 255, 0.04)) drop-shadow(0 8px 6px rgba(255, 255, 255, 0.1));
 }
 h2 {
   font-size: 2em;
-  color: blue;
+  color: #46BDDF;
 }
 
 mark {
-  color: blue;
+  color: #46BDDF;
   font-weight: bold;
   background-color: transparent;
+}
+
+a {
+  color: #46BDDF;
 }
 
 #who {

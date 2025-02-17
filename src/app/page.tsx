@@ -32,7 +32,7 @@ export default function Home() {
         <div className="md:w-1/2 items-center">
           <p>
             Ken has built his entire career around <mark>JavaScript</mark>, TypeScript, and Node, with a strong focus on <mark>React and React Native</mark>. He&apos;s used NextJS, including this website, which can be found{' '}
-            <a href='https://github.com/iamkennytso/portfolio' target='_blank' className="underline text-blue-400">here!</a><br/>
+            <a href='https://github.com/iamkennytso/portfolio' target='_blank' className="underline">here!</a><br/>
             He has extensive experience with various state management libraries, including Redux, Context API, React Query, MobX, and Jotai.<br/>
             For styling, he has worked with libraries like Material UI, PrismUI, and SCSS. Ken has utilized Storybook to enhance component libraries and has implemented testing with Jest and Cypress.<br/>
             He has also integrated RESTful APIs, GraphQL, and gRPC to interact with MySQL, PostgreSQL, and MongoDB databases. His full-stack experience on Google Cloud Platform (GCP) has exposed him to authentication, Cloud Functions, Remote Configs, A/B testing, and analytics.<br/>
