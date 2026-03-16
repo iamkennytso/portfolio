@@ -9,29 +9,29 @@ body {
 
 h1 {
   font-size: 8em;
-  color: #46BDDF;
+  color: #06B6D4;
   filter: drop-shadow(0 20px 16px rgba(255, 255, 255, 0.04)) drop-shadow(0 8px 6px rgba(255, 255, 255, 0.1));
 }
 h2 {
   font-size: 2em;
-  color: #46BDDF;
+  color: #06B6D4;
 }
 
 mark {
-  color: #46BDDF;
+  color: #06B6D4;
   font-weight: bold;
   background-color: transparent;
 }
 
 a {
-  color: #46BDDF;
+  color: #06B6D4;
 }
 
 #who {
   --s: 300px;
   --c1: #000000;
-  --c2: #0f0f0f;
-  --c3: #1e1e1e;
+  --c2: #011518;
+  --c3: #042028;
 
   background:
     repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
@@ -43,7 +43,7 @@ a {
 #what {
   --s: 100px;
   --c1: #000000;
-  --c2: #1e1e1e;
+  --c2: #042028;
   
   --_g: 
       var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
@@ -57,7 +57,7 @@ a {
 
 #where {
     --s: 120px;
-    --c1: #0f0f0f;
+    --c1: #011518;
     --c2: #000000;
     
     --_g:var(--c1) 15%,var(--c2) 0 28%,#0000 0 72%,var(--c2) 0 85%,var(--c1) 0;
@@ -72,8 +72,8 @@ a {
 #when {
   --s: 48px;
   --c1: #000000;
-  --c2: #0f0f0f;
-  --c3: #1e1e1e;
+  --c2: #011518;
+  --c3: #042028;
   
   --b: calc(var(--s)/2.67); /* control the thickness of the wavy line */
   
@@ -94,7 +94,7 @@ a {
 #why {
   --s: 220px; /* control the size*/
   --c1: #000000;
-  --c2: #0f0f0f;
+  --c2: #011518;
   
   --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
   --_c:,#0000 75%,var(--c2) 0;
@@ -105,6 +105,10 @@ a {
     conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
     var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
   background-size: var(--s) var(--s);
+}
+
+#who, #what, #where, #when, #why {
+  border-bottom: 1px solid rgba(6, 182, 212, 0.12);
 }
 
 @layer utilities {

@@ -1,4 +1,4 @@
-const CONTAINER_CLASSES = "md:flex md:flex-row justify-around w-full p-2 md:p-8"
+const CONTAINER_CLASSES = "md:flex md:flex-row justify-around w-full p-2 md:p-8 py-12 md:py-16"
 export default function Home() {
   const gradDate = new Date(2017, 10, 10)
   const curDate = new Date()
@@ -16,10 +16,19 @@ export default function Home() {
           <h1>Who</h1>
           <h2>is Ken?</h2>
         </div>
-        <div className="md:w-1/2 flex items-center">
+        <div className="md:w-1/2 flex-col content-center border-l border-primary/20 pl-6">
           <p>
-            Ken&apos;s a software engineer with 7+ years of experience. He has experience working with both small startups and large corporations. He has thrived as a solo full-stack engineer and has also successfully led teams of engineers. <br/><br/>
-            Ken places a high value on <mark>company culture</mark>, particularly among individuals who are open to giving and receiving constructive criticism and who are dedicated to honing their craft. He prioritizes opportunities for learning and values thorough code reviews. On a company level, Ken seeks to be part of a mission-driven organization that fosters collaboration and motivates its team members.
+            Ken's a software engineer with <mark>7+ years</mark> under his belt. He's done the
+            startup thing, he's done the big corporate thing, and he's been productive
+            in both. He's shipped products solo as a full-stack dev and led teams of
+            engineers to do the same.
+          </p><br/>
+          <p>
+            He's at his best when the people around him actually care about the work —
+            he's big on <mark>company culture</mark>. The kind of team where code reviews
+            are real conversations, feedback goes both ways, and everyone's trying to get
+            a little better every day. Big picture, he wants to be somewhere that's
+            building something that matters and isn't just going through the motions.
           </p>
         </div>
       </div>
@@ -29,14 +38,32 @@ export default function Home() {
           <h1>What</h1>
           <h2>technologies does Ken use?</h2>
         </div>
-        <div className="md:w-1/2 items-center">
+        <div className="md:w-1/2 items-center border-l border-primary/20 pl-6">
           <p>
-            Ken has built his entire career around <mark>JavaScript</mark>, TypeScript, and Node, with a strong focus on <mark>React and React Native</mark>. He&apos;s used NextJS, including this website, which can be found{' '}
-            <a href='https://github.com/iamkennytso/portfolio' target='_blank' className="underline">here!</a><br/>
-            He has extensive experience with various state management libraries, including Redux, Context API, React Query, MobX, and Jotai.<br/>
-            For styling, he has worked with libraries like Material UI, PrismUI, and SCSS. Ken has utilized Storybook to enhance component libraries and has implemented testing with Jest and Cypress.<br/>
-            He has also integrated RESTful APIs, GraphQL, and gRPC to interact with MySQL, PostgreSQL, and MongoDB databases. His full-stack experience on Google Cloud Platform (GCP) has exposed him to authentication, Cloud Functions, Remote Configs, A/B testing, and analytics.<br/>
-            Additionally, he has worked on CI/CD pipelines using GitHub Actions and has set up dashboards on Mixpanel as well as internal tools on Retool.
+            <mark>JavaScript</mark>, TypeScript, and Node are home base. <mark>React</mark> and <mark>React Native</mark> are
+            where he spends most of his time. He's built with Next.js too — this site
+            runs on it (
+            <a
+              href="https://github.com/iamkennytso/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              source code here
+            </a>
+            ).
+          </p><br/>
+          <p>
+            State management? He's used them all — Redux, Context API, React Query,
+            MobX, Jotai. Styling-wise, he's worked with Material UI, PrismUI, and
+            SCSS. He's leveled up component libraries with Storybook and kept things
+            reliable with Jest and Cypress.
+          </p><br/>
+          <p>
+            On the backend side, he's integrated RESTful APIs, GraphQL, and gRPC
+            talking to MySQL, PostgreSQL, and MongoDB. His GCP experience covers auth,
+            Cloud Functions, Remote Configs, A/B testing, and analytics. He's also set
+            up CI/CD with GitHub Actions, built dashboards in Mixpanel, and wired up
+            internal tools with Retool.
           </p>
         </div>
       </div>
@@ -46,10 +73,15 @@ export default function Home() {
           <h1>Where</h1>
           <h2>is Ken, where has he worked?</h2>
         </div>
-        <div className="md:w-1/2 flex items-center">
+        <div className="md:w-1/2 flex-col content-center border-l border-primary/20 pl-6">
           <p>
-            Ken is based in New York, <mark>New York</mark>. Due to family commitments, he is unable to consistently work in an office during standard business hours but remains available for company-wide meetings and after-hours activities.<br/><br/>
-            He&apos;s worked at small startups such as Zigazoo and Auxetic, as well as large corporations like the NBA, American Express, and Cigna.
+            Ken's in <mark>New York City</mark>. He works best with some flexibility — family stuff
+            means he can't always be in an office 9-to-5, but he's always around for
+            team syncs and happy to show up when it counts.
+          </p><br/>
+          <p>
+            He's built things at startups like Zigazoo and Auxetic, and at places
+            you've definitely heard of — the NBA, American Express, and Cigna.
           </p>
         </div>
       </div>
@@ -59,10 +91,10 @@ export default function Home() {
           <h1>When</h1>
           <h2>did Ken start coding?</h2>
         </div>
-        <div className="md:w-1/2 flex items-center">
-          Ken is a front-end focused software engineer, graduating from Hack Reactor&apos;s 10th New York Co-hort and whose experience now spans<br/>
+        <div className="md:w-1/2 flex items-center border-l border-primary/20 pl-6">
+          Ken came up through Hack Reactor's 10th New York cohort. Front-end is his bread and butter, and he's been doing this professionally for: <br/>
           <div className="w-full flex justify-center m-4 ">
-            <div className="text-center p-4 border-2 rounded border-gray-500 bg-gray-800"><code>{years} years<br/>{months} months<br/>{days} days</code><br/></div>
+            <div className="text-center p-4 border-2 rounded border-primary/50 bg-primary-dark"><code>{years} years<br/>{months} months<br/>{days} days</code><br/></div>
           </div>
         </div>
       </div>
@@ -72,9 +104,27 @@ export default function Home() {
           <h1>Why</h1>
           <h2>is Ken a software engineer?</h2>
         </div>
-        <div className="md:w-1/2 flex items-center">
-        He began his tech career as an eCommerce Specialist at Durante Rentals, a construction rental startup that leveraged technology as a key competitive advantage. His dedication and technical acumen quickly led to his promotion to CIS Manager, where he was responsible for overseeing all technology operations. The company&apos;s president frequently sought to innovate within the industry, and Ken was tasked with leading these modernization initiatives. Throughout his three years at Durante Rentals, Ken often found himself evaluating various software solutions, though he frequently encountered limitations in existing offerings. This experience inspired him to pursue a career in software development, driven by a desire to create better solutions.<br/> <br/>
-        Born into an immigrant family, Ken spent high school summers at the family restaurant, where he developed a strong work ethic and deep empathy for others. Ken also spent a few years as a bartender and bar manager, where he discovered his love for mentoring others and sharing his expertise.  When he&apos;s not coding, you&apos;ll find him unleashing his competitive side in video games or perfecting his steak-cooking skills in the kitchen.
+        <div className="md:w-1/2 flex-col content-center border-l border-primary/20 pl-6">
+          <p>
+            Before code, Ken was an eCommerce Specialist at Durante Rentals — a
+            construction rental startup that punched above its weight with tech. He
+            did well enough to get promoted to CIS Manager, running all their tech
+            operations. The company's president was always looking for the next edge,
+            and Ken was the guy figuring out how to make it happen.
+          </p><br/>
+          <p>
+            After three years of evaluating software and constantly hitting walls with
+            what was out there, he had a pretty simple thought: why not just build
+            something better? So he did.
+          </p><br/>
+          <p>
+            Ken grew up in an immigrant family, spending summers in high school
+            working at the family restaurant — which is a fast track to learning hard
+            work and empathy. He later bartended and managed a bar, which is where he
+            figured out he genuinely loves teaching people and sharing what he knows.
+            When he's not writing code, he's probably getting way too competitive in a
+            video game or running a steak experiment.
+          </p>
         </div>
       </div>
     </main>
