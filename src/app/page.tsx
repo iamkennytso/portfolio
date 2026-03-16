@@ -18,17 +18,17 @@ export default function Home() {
         </div>
         <div className="md:w-1/2 flex-col content-center border-l border-primary/20 pl-6">
           <p>
-            Ken's a software engineer with <mark>7+ years</mark> under his belt. He's done the
-            startup thing, he's done the big corporate thing, and he's been productive
-            in both. He's shipped products solo as a full-stack dev and led teams of
+            Ken&apos;s a software engineer with <mark>7+ years</mark> under his belt. He&apos;s done the
+            startup thing, he&apos;s done the big corporate thing, and he&apos;s been productive
+            in both. He&apos;s shipped products solo as a full-stack dev and led teams of
             engineers to do the same.
           </p><br/>
           <p>
-            He's at his best when the people around him actually care about the work —
-            he's big on <mark>company culture</mark>. The kind of team where code reviews
-            are real conversations, feedback goes both ways, and everyone's trying to get
-            a little better every day. Big picture, he wants to be somewhere that's
-            building something that matters and isn't just going through the motions.
+            He&apos;s at his best when the people around him actually care about the work —
+            he&apos;s big on <mark>company culture</mark>. The kind of team where code reviews
+            are real conversations, feedback goes both ways, and everyone&apos;s trying to get
+            a little better every day. Big picture, he wants to be somewhere that&apos;s
+            building something that matters and isn&apos;t just going through the motions.
           </p>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function Home() {
         <div className="md:w-1/2 items-center border-l border-primary/20 pl-6">
           <p>
             <mark>JavaScript</mark>, TypeScript, and Node are home base. <mark>React</mark> and <mark>React Native</mark> are
-            where he spends most of his time. He's built with Next.js too — this site
+            where he spends most of his time. He&apos;s built with Next.js too — this site
             runs on it (
             <a
               href="https://github.com/iamkennytso/portfolio"
@@ -53,15 +53,15 @@ export default function Home() {
             ).
           </p><br/>
           <p>
-            State management? He's used them all — Redux, Context API, React Query,
-            MobX, Jotai. Styling-wise, he's worked with Material UI, PrismUI, and
-            SCSS. He's leveled up component libraries with Storybook and kept things
+            State management? He&apos;s used them all — Redux, Context API, React Query,
+            MobX, Jotai. Styling-wise, he&apos;s worked with Material UI, PrismUI, and
+            SCSS. He&apos;s leveled up component libraries with Storybook and kept things
             reliable with Jest and Cypress.
           </p><br/>
           <p>
-            On the backend side, he's integrated RESTful APIs, GraphQL, and gRPC
+            On the backend side, he&apos;s integrated RESTful APIs, GraphQL, and gRPC
             talking to MySQL, PostgreSQL, and MongoDB. His GCP experience covers auth,
-            Cloud Functions, Remote Configs, A/B testing, and analytics. He's also set
+            Cloud Functions, Remote Configs, A/B testing, and analytics. He&apos;s also set
             up CI/CD with GitHub Actions, built dashboards in Mixpanel, and wired up
             internal tools with Retool.
           </p>
@@ -75,13 +75,13 @@ export default function Home() {
         </div>
         <div className="md:w-1/2 flex-col content-center border-l border-primary/20 pl-6">
           <p>
-            Ken's in <mark>New York City</mark>. He works best with some flexibility — family stuff
-            means he can't always be in an office 9-to-5, but he's always around for
+            Ken&apos;s in <mark>New York City</mark>. He works best with some flexibility — family stuff
+            means he can&apos;t always be in an office 9-to-5, but he&apos;s always around for
             team syncs and happy to show up when it counts.
           </p><br/>
           <p>
-            He's built things at startups like Zigazoo and Auxetic, and at places
-            you've definitely heard of — the NBA, American Express, and Cigna.
+            He&apos;s built things at startups like Zigazoo and Auxetic, and at places
+            you&apos;ve definitely heard of — the NBA, American Express, and Cigna.
           </p>
         </div>
       </div>
@@ -92,7 +92,7 @@ export default function Home() {
           <h2>did Ken start coding?</h2>
         </div>
         <div className="md:w-1/2 flex items-center border-l border-primary/20 pl-6">
-          Ken came up through Hack Reactor's 10th New York cohort. Front-end is his bread and butter, and he's been doing this professionally for: <br/>
+          Ken came up through Hack Reactor&apos;s 10th New York cohort. Front-end is his bread and butter, and he&apos;s been doing this professionally for: <br/>
           <div className="w-full flex justify-center m-4 ">
             <div className="text-center p-4 border-2 rounded border-primary/50 bg-primary-dark"><code>{years} years<br/>{months} months<br/>{days} days</code><br/></div>
           </div>
@@ -109,7 +109,7 @@ export default function Home() {
             Before code, Ken was an eCommerce Specialist at Durante Rentals — a
             construction rental startup that punched above its weight with tech. He
             did well enough to get promoted to CIS Manager, running all their tech
-            operations. The company's president was always looking for the next edge,
+            operations. The company&apos;s president was always looking for the next edge,
             and Ken was the guy figuring out how to make it happen.
           </p><br/>
           <p>
@@ -122,7 +122,7 @@ export default function Home() {
             working at the family restaurant — which is a fast track to learning hard
             work and empathy. He later bartended and managed a bar, which is where he
             figured out he genuinely loves teaching people and sharing what he knows.
-            When he's not writing code, he's probably getting way too competitive in a
+            When he&apos;s not writing code, he&apos;s probably getting way too competitive in a
             video game or running a steak experiment.
           </p>
         </div>
