@@ -22,6 +22,10 @@ const NAV_LINKS = [
     href: '/coverLetter'
   },
   {
+    name: 'SDI',
+    href: '/sdi'
+  },
+  {
     name: 'Wonderlic',
     href: '/wonderlic'
   },
