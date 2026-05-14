@@ -9,9 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'primary': '#06B6D4',
-        'primary-dark': '#011518',
-        'primary-darker': '#042028',
+        // Consume CSS variables so Tailwind utilities retint with the theme.
+        // The <alpha-value> placeholder enables opacity utilities (e.g. border-primary/20).
+        'primary':        'rgb(var(--color-accent-rgb) / <alpha-value>)',
+        'primary-dark':   'rgb(var(--color-panel-rgb) / <alpha-value>)',
+        'primary-darker': 'rgb(var(--color-bg-rgb) / <alpha-value>)',
       }
     },
   },
