@@ -90,16 +90,20 @@ a {
    ─────────────────────────────────────────────── */
 
 #who {
-  --s: 300px;
+  --s: 160px;
   --c1: var(--color-bg);
   --c2: var(--color-panel);
   --c3: var(--color-panel-2);
-
+  --_ring: radial-gradient(circle,
+    #0000 16%, var(--c3) 17% 26%, #0000 27%,
+    #0000 40%, var(--c2) 41% 50%, #0000 51%);
   background:
-    repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg)
-      calc(.5 * var(--s)) calc(.5 * var(--s) * 0.577),
-    repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
-  background-size: var(--s) calc(var(--s) * 0.577);
+    var(--_ring) 0 0,
+    var(--_ring) calc(var(--s)/2) calc(var(--s)/2),
+    repeating-conic-gradient(from 0deg,  var(--c2) 0 18deg, #0000 18deg 42deg, var(--c3) 42deg 60deg, #0000 60deg 120deg) 0 0,
+    repeating-conic-gradient(from 60deg, var(--c3) 0 18deg, #0000 18deg 42deg, var(--c2) 42deg 60deg, #0000 60deg 120deg) calc(var(--s)/2) calc(var(--s)/2),
+    var(--c1);
+  background-size: var(--s) var(--s);
 }
 
 #what {
@@ -118,16 +122,18 @@ a {
 }
 
 #where {
-  --s: 60px;
-  --c1: var(--color-panel);
-  --c2: var(--color-bg);
-
+  --s: 110px;
+  --c1: var(--color-bg);
+  --c2: var(--color-panel);
+  --c3: var(--color-panel-2);
+  --_arc: transparent 22%, var(--c3) 23% 33%, transparent 34%,
+          transparent 46%, var(--c2) 47% 57%, transparent 58%;
   background:
-    linear-gradient(135deg, var(--c1) 25%, transparent 25%) calc(var(--s) / 2) 0,
-    linear-gradient(225deg, var(--c1) 25%, transparent 25%) calc(var(--s) / 2) 0,
-    linear-gradient(315deg, var(--c1) 25%, transparent 25%),
-    linear-gradient(45deg,  var(--c1) 25%, transparent 25%),
-    var(--c2);
+    radial-gradient(circle at 0    0,    var(--_arc)) 0 0,
+    radial-gradient(circle at 100% 100%, var(--_arc)) 0 0,
+    radial-gradient(circle at 100% 0,    var(--_arc)) calc(var(--s)/2) calc(var(--s)/2),
+    radial-gradient(circle at 0    100%, var(--_arc)) calc(var(--s)/2) calc(var(--s)/2),
+    var(--c1);
   background-size: var(--s) var(--s);
 }
 
